@@ -1,4 +1,16 @@
-# The Great Buffalo Library
+""" Data methods for the buffalo library
+
+This module consists of methods which will be useful to load the buffalo
+data for your assignment. It also contains the implementation of the class
+structure which will represent the Buffalo.
+
+The classes in this module are:
+    * Buffalo
+
+The functions in this module are:
+    * load_data
+
+"""
 import numpy as np
 import csv
 import random as rd

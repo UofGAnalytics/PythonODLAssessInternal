@@ -1,3 +1,13 @@
+""" Plotting methods for the buffalo library
+
+This module consists of methods which will be useful to plot data.
+
+The functions in this module are:
+    * plot_xy
+    * kde_plot
+    * quiver_plot
+
+"""
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 import seaborn as sns
@@ -31,32 +41,6 @@ def plot_xy(x_values, y_values, title="", x_label="", y_label=""):
 
     plt.show()  # Show the plot
 
-
-def elbow_method_plot(data, max_clusters=10):
-    """
-    Perform the elbow method and plot the results.
-
-    Args:
-        data (list of tuples or numpy.ndarray): The data points in the format
-        [(xi, yi), ...].
-        max_clusters (int): The maximum number of clusters to consider (default
-        is 10).
-
-    Returns:
-        None
-    """
-    inertias = []
-
-    for i in range(1, max_clusters + 1):
-        kmeans = KMeans(n_clusters=i)
-        kmeans.fit(data)
-        inertias.append(kmeans.inertia_)
-
-    plt.plot(range(1, max_clusters + 1), inertias, marker='o')
-    plt.title('Elbow Method')
-    plt.xlabel('Number of Clusters')
-    plt.ylabel('Inertia')
-    plt.show()
 
 
 def kde_plot(x_data, y_data, title="", x_label="", y_label=""):
