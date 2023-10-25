@@ -28,4 +28,4 @@ jobs:
     - name: Build Documentation
       run: |
         cd docs
-        poetry run make dirhtml
+        poetry run make html
