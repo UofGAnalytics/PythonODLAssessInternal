@@ -1,9 +1,7 @@
 # The Great Buffalo Library
 import numpy as np
-import matplotlib.pyplot as plt
 import csv
-from sklearn.cluster import KMeans
-import seaborn as sns
+import random as rd
 
 
 class Buffalo:
@@ -145,19 +143,6 @@ def load_data(data_set_id):
     # Combine positions from all clusters
     positions = np.vstack(positions)
 
-    # Plot the positions
-    plt.scatter(
-        positions[:, 0],
-        positions[:, 1],
-        c=np.repeat(
-            np.arange(num_clusters),
-            num_individuals // num_clusters),
-        cmap='viridis')
-    plt.title('Updated Positions for 100 Individuals in 3 Clusters')
-    plt.xlabel('X Coordinate')
-    plt.ylabel('Y Coordinate')
-    plt.show()
-
     positions_final = positions
 
     # have buffalo class call functions from the library
@@ -189,16 +174,3 @@ def load_data(data_set_id):
         print(f"Error: An error occurred while loading data - {str(e)}")
 
     return data
-
-
-
-class LesserSpottedBuffalo(Buffalo):
-    """
-        This is a simple class representing a Lesser Spotted Buffalo
-
-        This class does not have any public attributes
-        and thus you should use the methods to get and update
-        each of the Buffalo's attributes.
-
-    """
-    pass

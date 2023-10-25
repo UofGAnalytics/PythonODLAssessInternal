@@ -1,3 +1,6 @@
+import matplotlib.pyplot as plt
+from sklearn.cluster import KMeans
+import seaborn as sns
 
 
 def plot_xy(x_values, y_values, title="", x_label="", y_label=""):
@@ -34,8 +37,10 @@ def elbow_method_plot(data, max_clusters=10):
     Perform the elbow method and plot the results.
 
     Args:
-        data (list of tuples or numpy.ndarray): The data points in the format [(xi, yi), ...].
-        max_clusters (int): The maximum number of clusters to consider (default is 10).
+        data (list of tuples or numpy.ndarray): The data points in the format
+        [(xi, yi), ...].
+        max_clusters (int): The maximum number of clusters to consider (default
+        is 10).
 
     Returns:
         None
