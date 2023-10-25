@@ -7,10 +7,6 @@ Welcome to bufflib's documentation!
 ===================================
 
 
-squiggle
-
-
-
 Welcome to the Glasgow ODL Assessment Library for 2023. This library has been
 designed to help you to write your assessment, consisting of several functions
 and classes. It is simpler than a standard python package, but should
