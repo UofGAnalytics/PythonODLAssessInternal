@@ -5,6 +5,9 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+
+# pylint: disable=C0103
+
 import os
 import sys
 
