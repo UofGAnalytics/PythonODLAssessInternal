@@ -31,5 +31,6 @@ jobs:
         poetry run make html
     - name: Deploy Documentation
       run: | 
+        pip install ghp-import
         ghp-import -n -p -f docs/_build/html
 
