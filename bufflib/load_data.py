@@ -162,7 +162,7 @@ def load_data(data_set_id):
     positions_final = np.vstack(positions)
 
     data = []
-    for i in range(num_individuals):
+    for i in range(num_individuals-1):
         pos1 = positions_initial[i, :]
         pos2 = positions_final[i, :]
         age = ages[i]
