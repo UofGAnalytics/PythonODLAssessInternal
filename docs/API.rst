@@ -1,0 +1,41 @@
+API
+===
+
+Our package consists of several different functions/classes to perform various
+operations on our dataset, including loading the data, plotting the data and
+analysis the data. 
+
+
+Loading Data
+------------
+
+.. autosummary::
+      :toctree: generated
+
+
+      bufflib.load_data.Buffalo
+      bufflib.load_data.LesserSpottedBuffalo
+      bufflib.load_data.load_data
+
+
+Clustering Functions
+--------------------
+
+.. autosummary::
+      :toctree: generated
+
+      bufflib.cluster.kmeans_cluster_and_plot
+
+
+
+
+Plotting Functions
+------------------
+
+.. autosummary::
+      :toctree: generated
+
+      bufflib.plotting.plot_xy
+      bufflib.plotting.elbow_method_plot
+      bufflib.plotting.kde_plot
+      bufflib.plotting.quiver_plot
