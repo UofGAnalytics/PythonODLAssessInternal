@@ -29,8 +29,6 @@ def plot_xy(x_values, y_values, title="", x_label="", y_label=""):
     plt.show()  # Show the plot
 
 
-
-
 def elbow_method_plot(data, max_clusters=10):
     """
     Perform the elbow method and plot the results.
@@ -119,4 +117,3 @@ def quiver_plot(x, y, u, v, scale=1, title="", x_label="", y_label=""):
     plt.grid(True)  # Optional: Add a grid to the plot
 
     plt.show()  # Show the plot
-

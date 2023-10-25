@@ -1,3 +1,4 @@
+from sklearn.cluster import KMeans
 
 
 def kmeans_cluster_and_plot(data, n_clusters=3):
@@ -28,4 +29,3 @@ def kmeans_cluster_and_plot(data, n_clusters=3):
         clustered_data[labels[i]].append((i, datapoint))
 
     return clustered_data
-
