@@ -15,6 +15,8 @@ import numpy as np
 import csv
 import random as rd
 
+class IncorrectArgument(Exception):
+    pass
 
 class Buffalo:
     """
@@ -57,7 +59,7 @@ class Buffalo:
         elif time == 1:
             return self.end_pos
         else:
-            raise Exception("Unknown time requested")
+            raise IncorrectArgument("Unknown time requested")
 
     def get_stats(self):
         """Getting statistics on this Buffalo
