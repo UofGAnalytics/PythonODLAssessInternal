@@ -19,3 +19,6 @@ pip install git+https://github.com/UofGAnalytics/PythonODLAssessInternal
 ```
 
 ## Documentation
+
+The documentation for this package can be found at
+[this page.](https://uofganalytics.github.io/PythonODLAssessInternal/)
