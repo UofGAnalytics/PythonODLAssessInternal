@@ -14,7 +14,6 @@ Loading Data
 
 
       bufflib.load_data.Buffalo
-      bufflib.load_data.LesserSpottedBuffalo
       bufflib.load_data.load_data
 
 
@@ -25,6 +24,7 @@ Clustering Functions
       :toctree: generated
 
       bufflib.cluster.kmeans_cluster_and_plot
+      bufflib.cluster.elbow_method_plot
 
 
 
@@ -36,6 +36,5 @@ Plotting Functions
       :toctree: generated
 
       bufflib.plotting.plot_xy
-      bufflib.plotting.elbow_method_plot
       bufflib.plotting.kde_plot
       bufflib.plotting.quiver_plot
