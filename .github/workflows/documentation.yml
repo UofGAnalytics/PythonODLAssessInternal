@@ -29,3 +29,7 @@ jobs:
       run: |
         cd docs
         poetry run make html
+    - name: Deploy Documentation
+      run: | 
+        ghp-import -n -p -f docs/_build/html
+
