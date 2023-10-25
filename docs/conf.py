@@ -5,7 +5,8 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-
+import os
+import sys
 
 
 project = 'bufflib'
@@ -14,20 +15,22 @@ author = 'Andrew Elliott and Jenn Gaskell'
 release = '1.0'
 
 
-
-
-import os
-import sys
-sys.path.insert(0,os.path.abspath("."))
-sys.path.insert(0,os.path.abspath(".."))
+sys.path.insert(0, os.path.abspath("."))
+sys.path.insert(0, os.path.abspath(".."))
 
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.autodoc',
-              'sphinx.ext.coverage','sphinx.ext.viewcode',
-              'sphinx.ext.napoleon','sphinx.ext.autosummary','sphinx.ext.doctest','sphinx.ext.duration',]
+extensions = [
+    'sphinx.ext.autodoc',
+    'sphinx.ext.coverage',
+    'sphinx.ext.viewcode',
+    'sphinx.ext.napoleon',
+    'sphinx.ext.autosummary',
+    'sphinx.ext.doctest',
+    'sphinx.ext.duration',
+    ]
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
@@ -37,9 +40,9 @@ autosummary_generate = True
 
 autodoc_default_options = {
         'members': True,
-        'inherited-members':True,
+        'inherited-members': True,
         'member-order': 'bysource',
-        'special-members': False, #'__init__',
+        'special-members': False,  # '__init__',
         'undoc-members': True,
         'exclude-members': '__weakref__'
 }
@@ -49,5 +52,5 @@ autodoc_default_options = {
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'alabaster'
-#html_theme = 'classic'
+# html_theme = 'classic'
 html_static_path = ['_static']
