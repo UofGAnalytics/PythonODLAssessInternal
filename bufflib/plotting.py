@@ -41,7 +41,6 @@ def plot_xy(x_values, y_values, title="", x_label="", y_label=""):
     plt.show()  # Show the plot
 
 
-
 def kde_plot(x_data, y_data, title="", x_label="", y_label=""):
     """
     Create a Kernel Density Estimation (KDE) plot.
