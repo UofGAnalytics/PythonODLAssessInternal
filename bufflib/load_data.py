@@ -56,10 +56,11 @@ class Buffalo:
         """
         if time == 0:
             return self.start_pos
-        elif time == 1:
+
+        if time == 1:
             return self.end_pos
-        else:
-            raise IncorrectArgument("Unknown time requested")
+
+        raise IncorrectArgument("Unknown time requested")
 
     def get_stats(self):
         """Getting statistics on this Buffalo
@@ -89,7 +90,7 @@ def load_data(data_set_id):
         Buffalo class
     """
 
-    np.random.seed(data_set_id)  # make student number?
+    np.random.seed(data_set_id)
 
     # Number of individuals in each cluster
     num_individuals = 100
@@ -155,36 +156,15 @@ def load_data(data_set_id):
         positions[i] += cluster_velocities[i]
 
     # Combine positions from all clusters
-    positions = np.vstack(positions)
+    positions_final = np.vstack(positions)
 
-    positions_final = positions
-
-    # have buffalo class call functions from the library
-    # call plotting from class
-    # need to do some joiny bit to feed into cluster
-    # def plot inside class
-
-    ##
     data = []
     for i in range(num_individuals):
         pos1 = positions_initial[i, :]
         pos2 = positions_final[i, :]
         age = ages[i]
         data.append(Buffalo(pos1, pos2, age))
-    rd.shuffle(data)
-    return data
 
-    # Need to improve this to change the dataset but not for now...
-    file_path = 'buffalos.csv'  # Replace with the path to your CSV file
-    data = []
-    try:
-        with open(file_path, 'r', newline='') as file:
-            csv_reader = csv.reader(file)
-            for row in csv_reader:
-                data.append(row)
-    except FileNotFoundError:
-        print(f"Error: File '{file_path}' not found.")
-    except Exception as e:
-        print(f"Error: An error occurred while loading data - {str(e)}")
+    rd.shuffle(data)
 
     return data
