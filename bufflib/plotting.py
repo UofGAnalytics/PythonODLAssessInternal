@@ -9,7 +9,6 @@ The functions in this module are:
 
 """
 import matplotlib.pyplot as plt
-from sklearn.cluster import KMeans
 import seaborn as sns
 
 

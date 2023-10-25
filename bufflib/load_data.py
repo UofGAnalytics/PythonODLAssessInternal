@@ -11,12 +11,15 @@ The functions in this module are:
     * load_data
 
 """
-import numpy as np
-import csv
 import random as rd
+import numpy as np
+
 
 class IncorrectArgument(Exception):
+    """ Custom exception to capture incorrect arguments
+    """
     pass
+
 
 class Buffalo:
     """
