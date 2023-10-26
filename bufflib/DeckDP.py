@@ -1,3 +1,12 @@
+""" A card deck for Question 1
+
+This module consists of a class of cards, from which we can individual cards
+
+The functions in this module are:
+    * drawCard
+   
+
+"""
 import random as rd
 
 class CardDP:
