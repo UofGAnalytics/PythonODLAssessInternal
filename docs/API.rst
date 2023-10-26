@@ -23,7 +23,7 @@ Clustering Functions
 .. autosummary::
       :toctree: generated
 
-      bufflib.cluster.kmeans_cluster_and_plot
+      bufflib.cluster.kmeans_cluster
       bufflib.cluster.elbow_method_plot
 
 
