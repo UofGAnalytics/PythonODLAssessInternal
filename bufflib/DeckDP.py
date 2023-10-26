@@ -32,4 +32,10 @@ class CardDP:
             'Ace']
         
     def drawCard(self):
+    """
+    Draws a card from the specified deck
+
+    Returns:
+        A randomly selected card
+    """
         return [rd.choice(self.suits),rd.choice(self.numbers)]
