@@ -1,4 +1,5 @@
-""" A card deck for Question 1
+""" 
+A card deck for Question 1
 
 This module consists of a class of cards, from which we can individual cards
 
