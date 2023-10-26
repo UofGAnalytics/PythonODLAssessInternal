@@ -5,6 +5,16 @@ Our package consists of several different functions/classes to perform various
 operations on our dataset, including loading the data, plotting the data and
 analysis the data. 
 
+Card Deck
+------------
+
+.. autosummary::
+      :toctree: generated
+
+
+      bufflib.DeckDP.CardDP
+
+
 
 Loading Data
 ------------
