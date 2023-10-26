@@ -28,7 +28,7 @@ def plot_xy(x_values, y_values, title="", x_label="", y_label=""):
     """
     plt.figure(figsize=(8, 6))  # Optional: Set the figure size
 
-    plt.plot(x_values, y_values, label="Data")  # Plot X and Y values
+    plt.scatter(x_values, y_values, label="Data")  # Plot X and Y values
 
     plt.title(title)  # Optional: Set the plot title
     plt.xlabel(x_label)  # Optional: Set the X-axis label
