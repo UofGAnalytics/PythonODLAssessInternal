@@ -1,10 +1,17 @@
+"""
+
+Module which draws cards from a large deck
+
+"""
 import random as rd
+
 
 class CardDP:
     """
     A card deck for Question 1
 
-    This module consists of a class of cards, from which we can draw individual cards
+    This module consists of a class of cards, from which we can draw individual
+    cards
 
     The functions in this module are:
         * drawCard
@@ -13,6 +20,13 @@ class CardDP:
     def __init__(self):
         """
         Set up the deck
+
+        Args:
+            None
+
+        Returns:
+            None
+
         """
 
         # Set up the suits and numbers
@@ -33,9 +47,14 @@ class CardDP:
 
     def drawCard(self):
         """
-        Draws a card from the specified deck
+        Draw a card from the deck
+
+        Args:
+            None
 
         Returns:
-            A randomly selected card
+            list: A list consisting of the suit and the number of the drawn
+            card
         """
+
         return [rd.choice(self.suits), rd.choice(self.numbers)]
