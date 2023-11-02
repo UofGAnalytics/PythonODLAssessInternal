@@ -73,10 +73,10 @@ def quiver_plot(x, y, u, v, scale=1, title="", x_label="", y_label=""):
     Create a quiver plot to visualize vector fields.
 
     Args:
-        x (list or numpy.ndarray): X-coordinates of the grid points.
-        y (list or numpy.ndarray): Y-coordinates of the grid points.
-        u (list or numpy.ndarray): X-component of the vectors.
-        v (list or numpy.ndarray): Y-component of the vectors.
+        x (list or numpy.ndarray): X-coordinates of the buffalo position.
+        y (list or numpy.ndarray): Y-coordinates of the buffalo position.
+        u (list or numpy.ndarray): X-component of the velocity vector.
+        v (list or numpy.ndarray): Y-component of the velocity vector.
         scale (float): Scaling factor for the arrow length (default is 1).
         title (str): The plot title (optional).
         x_label (str): The X-axis label (optional).
