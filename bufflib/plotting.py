@@ -59,7 +59,7 @@ def kde_plot(x_data, y_data, title="", x_label="", y_label=""):
 
     plt.figure(figsize=(8, 6))  # Optional: Set the figure size
 
-    sns.kdeplot(x=x_data, y=y_data, cmap="Blues", shade=True, cbar=True)
+    sns.kdeplot(x=x_data, y=y_data, cmap="Blues", fill=True, cbar=True)
 
     plt.title(title)  # Optional: Set the plot title
     plt.xlabel(x_label)  # Optional: Set the X-axis label
