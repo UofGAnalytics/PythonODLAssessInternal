@@ -30,7 +30,7 @@ class Buffalo:
         each of the Buffalo's attributes.
     """
 
-    def __init__(self, start_pos, end_pos, age):
+    def __init__(self, start_pos, end_pos, age, mass, horn_length):
         """Setting up the Buffalo class
 
 
@@ -46,6 +46,8 @@ class Buffalo:
         self.start_pos = start_pos
         self.end_pos = end_pos
         self.age = age
+        self.mass = mass
+        self.horn_length = horn_length
 
     def get_pos(self, time):
         """Get position of the Buffalo at a certain time
@@ -77,7 +79,9 @@ class Buffalo:
             the respective value.
 
         """
-        return {"age": self.age}
+        return {"age": self.age,
+               "mass": self.mass,
+               "horn_length": self.horn_length}
 
 
 def load_data(data_set_id):
@@ -133,7 +137,8 @@ def load_data(data_set_id):
     ages = ages.astype(int)
 
     ages = np.hstack(ages)
-
+    masses = np.random.normal(650, 100, num_individuals)
+    horn_lengths = np.random.normal(40, 5, num_individuals)
     # move one time step:
 
     # Initialize velocities for each cluster
@@ -172,7 +177,9 @@ def load_data(data_set_id):
         pos1 = positions_initial[i, :]
         pos2 = positions_final[i, :]
         age = ages[i]
-        data.append(Buffalo(pos1, pos2, age))
+        mass = masses[i]
+        horn_length = horn_lengths[i]
+        data.append(Buffalo(pos1, pos2, age, mass, horn_length))
 
     rd.shuffle(data)
 
