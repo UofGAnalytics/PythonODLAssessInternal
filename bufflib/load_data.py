@@ -156,7 +156,7 @@ def load_data(data_set_id):
     
     # Update positions based on velocities for each cluster
     for i in range(num_clusters):
-        positions[i] += cluster_velocities[i]
+        positions[i] += np.random.normal(loc=cluster_velocities[i],scale=1, size=len(positions[i]))
 
     # Combine positions from all clusters
     positions_final = np.vstack(positions)
