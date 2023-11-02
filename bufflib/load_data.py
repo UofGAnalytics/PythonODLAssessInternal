@@ -35,9 +35,9 @@ class Buffalo:
 
 
         Args:
-            start_pos (array_like) Array of the start position of the Buffalo
-            end_pos (array_like) Array of the end position of the Buffalo
-            age : (int or float) Array of the end position of the Buffalo
+            start_pos (array_like): Array of the start position of the Buffalo
+            end_pos: (array_like): Array of the end position of the Buffalo
+            age (int or float): Array of the end position of the Buffalo
 
         Returns:
             None
@@ -52,7 +52,8 @@ class Buffalo:
 
 
         Args:
-            time (int) Integer giving the time at which we require the position
+            time (int): Integer giving the time at which we require the
+               position
 
         Returns:
             array_like: Returns the requested position
@@ -85,7 +86,7 @@ def load_data(data_set_id):
     we collect every year
 
     Args:
-        data_set_id: The ID of the dataset you wish to load
+        data_set_id (int): The ID of the dataset you wish to load
 
 
     Returns:

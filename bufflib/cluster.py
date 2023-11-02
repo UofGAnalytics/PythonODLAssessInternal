@@ -18,8 +18,8 @@ def kmeans_cluster(data, n_clusters=3):
 
     Args:
         data (list of tuples or numpy.ndarray): The data points in the format
-        [(xi, yi), ...].  n_clusters (int): The number of clusters to create
-        (default is 3).
+           [(xi, yi), ...].
+        n_clusters (int): The number of clusters to create (default is 3).
 
     Returns:
         A dictionary with keys cluster/group id and values a list of members of
@@ -48,9 +48,9 @@ def elbow_method_plot(data, max_clusters=10):
 
     Args:
         data (list of tuples or numpy.ndarray): The data points in the format
-        [(xi, yi), ...].
+            [(xi, yi), ...].
         max_clusters (int): The maximum number of clusters to consider (default
-        is 10).
+            is 10).
 
     Returns:
         None
