@@ -80,8 +80,8 @@ class Buffalo:
 
         """
         return {"age": self.age,
-               "mass": self.mass,
-               "horn_length": self.horn_length}
+                "mass": self.mass,
+                "horn_length": self.horn_length}
 
 
 def load_data(data_set_id):
