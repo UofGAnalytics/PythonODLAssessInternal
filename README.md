@@ -10,12 +10,12 @@ This is the Python ODL assessment library. It consists of a small number of func
 
 Installing via ssh
 ```
-pip install --upgrade git+ssh://git@github.com/UofGAnalytics/PythonODLAssessInternal
+pip install --upgrade --force-reinstall git+ssh://git@github.com/UofGAnalytics/PythonODLAssessInternal
 ```
 
 Installing via http
 ```
-pip install --upgrade git+https://github.com/UofGAnalytics/PythonODLAssessInternal
+pip install --upgrade --force-reinstall git+https://github.com/UofGAnalytics/PythonODLAssessInternal
 ```
 
 ## Documentation
