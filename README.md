@@ -18,6 +18,8 @@ Installing via http
 pip install --upgrade --force-reinstall git+https://github.com/UofGAnalytics/PythonODLAssessInternal
 ```
 
+On Google CoLab, you will need an ! before the pip install, and you may be prompted to restart your runtime after the install. If the prompting continues, please remove the ```force-reinstall```
+
 ## Documentation
 
 The documentation for this package can be found at
