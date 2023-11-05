@@ -10,12 +10,12 @@ This is the Python ODL assessment library. It consists of a small number of func
 
 Installing via ssh
 ```
-pip install --upgrade --force-reinstall git+ssh://git@github.com/UofGAnalytics/PythonODLAssessInternal
+pip install --upgrade git+ssh://git@github.com/UofGAnalytics/PythonODLAssessInternal
 ```
 
 Installing via http
 ```
-pip install --upgrade --force-reinstall git+https://github.com/UofGAnalytics/PythonODLAssessInternal
+pip install --upgrade git+https://github.com/UofGAnalytics/PythonODLAssessInternal
 ```
 
 On Google CoLab and Jupyter, you will need an ! before the pip install, and you may be prompted to restart your runtime after the install. If the prompting continues, please remove the ```force-reinstall```

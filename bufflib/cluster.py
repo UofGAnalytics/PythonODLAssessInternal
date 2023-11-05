@@ -22,8 +22,8 @@ def kmeans_cluster(data, n_clusters=3):
         n_clusters (int): The number of clusters to create (default is 3).
 
     Returns:
-        A dictionary with keys cluster/group id and values a list of members of
-        the group
+        A list of lists, with the i-th element of the returned list being a
+        list of members of the i-th cluster.
     """
     # Create a KMeans model with the specified number of clusters
     kmeans = KMeans(n_clusters=n_clusters)
