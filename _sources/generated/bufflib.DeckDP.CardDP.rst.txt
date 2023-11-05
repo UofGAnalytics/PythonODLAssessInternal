@@ -1,0 +1,23 @@
+﻿bufflib.DeckDP.CardDP
+=====================
+
+.. currentmodule:: bufflib.DeckDP
+
+.. autoclass:: CardDP
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~CardDP.__init__
+      ~CardDP.drawCard
+   
+   
+
+   
+   
+   

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>API &#8212; bufflib 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
+    <script src="_static/documentation_options.js?v=f2a433a1"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bufflib.DeckDP.CardDP" href="generated/bufflib.DeckDP.CardDP.html" />
+    <link rel="prev" title="Installing the Package" href="Installation.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="api">
+<h1>API<a class="headerlink" href="#api" title="Link to this heading">¶</a></h1>
+<p>Our package consists of several different functions/classes to perform various
+operations on our dataset, including loading the data, plotting the data and
+analysis the data.</p>
+<section id="card-deck">
+<h2>Card Deck<a class="headerlink" href="#card-deck" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/bufflib.DeckDP.CardDP.html#bufflib.DeckDP.CardDP" title="bufflib.DeckDP.CardDP"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bufflib.DeckDP.CardDP</span></code></a>()</p></td>
+<td><p>A card deck for Question 1</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="loading-data">
+<h2>Loading Data<a class="headerlink" href="#loading-data" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/bufflib.load_data.Buffalo.html#bufflib.load_data.Buffalo" title="bufflib.load_data.Buffalo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bufflib.load_data.Buffalo</span></code></a>(start_pos, ...)</p></td>
+<td><p>This is a simple class representing a Buffalo</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/bufflib.load_data.load_data.html#bufflib.load_data.load_data" title="bufflib.load_data.load_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bufflib.load_data.load_data</span></code></a>(data_set_id)</p></td>
+<td><p>Loads a specific Buffalo dataset from all of the datasets we collect every year</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="clustering-functions">
+<h2>Clustering Functions<a class="headerlink" href="#clustering-functions" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/bufflib.cluster.kmeans_cluster.html#bufflib.cluster.kmeans_cluster" title="bufflib.cluster.kmeans_cluster"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bufflib.cluster.kmeans_cluster</span></code></a>(data[, ...])</p></td>
+<td><p>Perform KMeans clustering on data and plot the clustered points.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/bufflib.cluster.elbow_method_plot.html#bufflib.cluster.elbow_method_plot" title="bufflib.cluster.elbow_method_plot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bufflib.cluster.elbow_method_plot</span></code></a>(data[, ...])</p></td>
+<td><p>Perform the elbow method and plot the results.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="plotting-functions">
+<h2>Plotting Functions<a class="headerlink" href="#plotting-functions" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/bufflib.plotting.plot_xy.html#bufflib.plotting.plot_xy" title="bufflib.plotting.plot_xy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bufflib.plotting.plot_xy</span></code></a>(x_values, y_values)</p></td>
+<td><p>Plot X and Y values.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/bufflib.plotting.kde_plot.html#bufflib.plotting.kde_plot" title="bufflib.plotting.kde_plot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bufflib.plotting.kde_plot</span></code></a>(x_data, y_data[, ...])</p></td>
+<td><p>Create a Kernel Density Estimation (KDE) plot.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/bufflib.plotting.quiver_plot.html#bufflib.plotting.quiver_plot" title="bufflib.plotting.quiver_plot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bufflib.plotting.quiver_plot</span></code></a>(x, y, u, v[, ...])</p></td>
+<td><p>Create a quiver plot to visualize vector fields.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">bufflib</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Installation.html">Installing the Package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="Installation.html" title="previous chapter">Installing the Package</a></li>
+      <li>Next: <a href="generated/bufflib.DeckDP.CardDP.html" title="next chapter">bufflib.DeckDP.CardDP</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Andrew Elliott and Jenn Gaskell.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/API.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

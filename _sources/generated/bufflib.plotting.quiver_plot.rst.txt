@@ -1,0 +1,6 @@
+﻿bufflib.plotting.quiver\_plot
+=============================
+
+.. currentmodule:: bufflib.plotting
+
+.. autofunction:: quiver_plot

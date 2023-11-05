@@ -1,0 +1,6 @@
+﻿bufflib.cluster.kmeans\_cluster
+===============================
+
+.. currentmodule:: bufflib.cluster
+
+.. autofunction:: kmeans_cluster

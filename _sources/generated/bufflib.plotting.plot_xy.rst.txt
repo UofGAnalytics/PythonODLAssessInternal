@@ -1,0 +1,6 @@
+﻿bufflib.plotting.plot\_xy
+=========================
+
+.. currentmodule:: bufflib.plotting
+
+.. autofunction:: plot_xy

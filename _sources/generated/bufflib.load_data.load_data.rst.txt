@@ -1,0 +1,6 @@
+﻿bufflib.load\_data.load\_data
+=============================
+
+.. currentmodule:: bufflib.load_data
+
+.. autofunction:: load_data

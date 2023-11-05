@@ -1,0 +1,6 @@
+﻿bufflib.plotting.kde\_plot
+==========================
+
+.. currentmodule:: bufflib.plotting
+
+.. autofunction:: kde_plot

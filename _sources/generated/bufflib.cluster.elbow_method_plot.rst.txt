@@ -1,0 +1,6 @@
+﻿bufflib.cluster.elbow\_method\_plot
+===================================
+
+.. currentmodule:: bufflib.cluster
+
+.. autofunction:: elbow_method_plot
